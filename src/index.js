@@ -11,6 +11,6 @@ function fetchDogs(){
   .then(json => dogPics(json));
 }
 
-function dogPics(){
+function dogPics(json){
   
 }
