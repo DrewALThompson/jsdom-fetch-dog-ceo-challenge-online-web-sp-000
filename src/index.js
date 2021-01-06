@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   dropDown.addEventListener('change', (e) => {
     let letter = event.target.value;
     let filteredDogs = allBreeds.filter(breed => breed.startsWith(letter));
+    console.log(filteredDogs);
     dogBreeds(filteredDogs);
   })
     
