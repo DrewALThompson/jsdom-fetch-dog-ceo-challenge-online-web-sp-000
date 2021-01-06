@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     allBreeds.forEach(breed => {
       const breedLi = document.createElement('li');
       breedLi.innerHTML = breed;
-      breedContainer.appendChild(breedLi);
+      breedUl.appendChild(breedLi);
     });
   }
   
