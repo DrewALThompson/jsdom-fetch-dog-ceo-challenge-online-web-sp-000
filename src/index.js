@@ -9,6 +9,6 @@ function fetchDogs(){
   fetch(imgUrl)
   .then(res => res.json())
   .then(json => json.message.forEach(imgUrl){
-    
+    dogContainer.innerHTML +=
   };
 }
