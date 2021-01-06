@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   
-  addEventListener('click', () => {
-    
+  addEventListener('click', (e) => {
+    e.target.
   })
   
   
