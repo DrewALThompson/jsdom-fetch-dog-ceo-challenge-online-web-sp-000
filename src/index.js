@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     e.target.style.color = 'red';
   })
   
-  addEventListener('click', (e) => {
+  dropDown.addEventListener('change', (e) => {
     
   })
   
