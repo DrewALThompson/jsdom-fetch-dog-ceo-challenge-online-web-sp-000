@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   .then(res => res.json())
   .then(result => {
     allBreeds = Object.keys(result.message);
-    
+    console.log(allBreeds);
   })
     
   function dogPics(json){
