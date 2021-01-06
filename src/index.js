@@ -14,3 +14,5 @@ function dogPics(json){
       dogContainer.append(dogImage);
     });
   } 
+  
+  
