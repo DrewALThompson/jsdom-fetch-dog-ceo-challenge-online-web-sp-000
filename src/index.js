@@ -5,12 +5,12 @@ dogContainer = document.getElementById('dog-image-container');
 
  fetch(imgUrl)
   .then(res => res.json())
-  .then(json => dogPics(json.));
+  .then(json => dogPics(json.message));
 
-function dogPics(json){
-  json.message.forEach(dog => {
-    dogImage = document.createElement('img');
-    dogImage.src = pic;
-    dogContainer.append(dogImage);
-  });
-}
+function dogImages(dogs){
+    dogs.forEach(dog => {
+      const dogImage = document.createElement('img');
+      dogImage.src = dog;
+      dogContainer.appendChild(dogImage)
+    });
+  } 
