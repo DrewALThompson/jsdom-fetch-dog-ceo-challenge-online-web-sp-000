@@ -26,8 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
   
   function dogBreeds(json){
     json.message.forEach(breed => {
-      const breedLi = document.createElement('li')
-    })
+      const breedLi = document.createElement('li');
+      breedLi.innerHTML = breed;
+      breedContainer.appendChild(breedLi);
+    });
   }
   
   
