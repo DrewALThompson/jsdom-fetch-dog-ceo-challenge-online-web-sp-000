@@ -8,7 +8,7 @@ dogImage = document.createElement('img')
 function fetchDogs(){
   fetch(imgUrl)
   .then(res => res.json())
-  .then(json => json.message.forEach(imgUrl){
-    dogContainer.innerHTML += 
-  };
+  .then(json => json.message.forEach(function(imgUrl){
+    dogContainer.innerHTML += `<img src='`
+  )};
 }
