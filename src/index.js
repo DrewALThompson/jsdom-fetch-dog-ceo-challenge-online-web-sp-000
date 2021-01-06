@@ -1,2 +1,2 @@
 console.log('%c HI', 'color: firebrick')
-function fetchDogs()
+function fetchDogs("https://dog.ceo/api/breeds/image/random/4")
