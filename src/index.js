@@ -1,7 +1,7 @@
 console.log('%c HI', 'color: firebrick');
   
 document.addEventListener("DOMContentLoaded", () => {
-  const allBreeds = [];
+  let allBreeds = [];
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
   const breedUrl = 'https://dog.ceo/api/breeds/list/all';
   const dogContainer = document.getElementById('dog-image-container');
@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch(breedUrl)
   .then(res => res.json())
   .then(result => {
-    allBreeds = Object.keys(result)
+    allBreeds = Object.keys(result.message);
+    
   })
     
   function dogPics(json){
