@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   } 
   
-  function dogBreeds(allBreeds){
-    allBreeds.forEach(breed => {
+  function dogBreeds(breeds){
+    breeds.forEach(breed => {
       const breedLi = document.createElement('li');
       breedLi.innerHTML = breed;
       breedUl.appendChild(breedLi);
