@@ -12,5 +12,7 @@ function fetchDogs(){
 }
 
 function dogPics(json){
-  json['message'].forEach(pic => )
+  json['message'].forEach(pic => {
+    
+  })
 }
