@@ -7,7 +7,7 @@ dogContainer = document.getElementById('dog-image-container');
   .then(res => res.json())
   .then(json => dogPics(json.message));
 
-function dogImages(dogs){
+function dogPics(dogs){
     dogs.forEach(dog => {
       const dogImage = document.createElement('img');
       dogImage.src = dog;
