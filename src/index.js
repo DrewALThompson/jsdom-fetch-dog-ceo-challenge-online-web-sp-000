@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   fetch(breedUrl)
   .then(res => res.json())
-  .then(result => allBreeds.(result))
+  .then(result => allBreeds(result))
     
   function dogPics(json){
     json.message.forEach(dog => {
