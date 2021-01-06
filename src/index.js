@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch(imgUrl)
   .then(res => res.json())
   .then(json => dogPics(json));
+  
+  
     
   function dogPics(json){
     json.message.forEach(dog => {
@@ -17,4 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
       dogContainer.append(dogImage);
     });
   } 
+  
+  
 });
