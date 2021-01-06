@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   fetch(breedUrl)
   .then(res => res.json())
-  .then(json => dogBreeds(json))
+  .then(result => dogBreeds(result))
     
   function dogPics(json){
     json.message.forEach(dog => {
@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   } 
   
-  function dogBreeds(json){
-    json.message.forEach(breed => {
+  function dogBreeds(result){
+    result.message.forEach(breed => {
       const breedLi = document.createElement('li');
       breedLi.innerHTML = breed;
       breedContainer.appendChild(breedLi);
