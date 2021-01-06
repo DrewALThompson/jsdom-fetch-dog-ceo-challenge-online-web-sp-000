@@ -11,6 +11,7 @@ function dogPics(json){
     json.message.forEach(dog => {
       const dogImage = document.createElement('img');
       dogImage.src = dog;
-      dogContainer.append(dogImage);
+      console.log(dogContainer);
+      // dogContainer.append(dogImage);
     });
   } 
