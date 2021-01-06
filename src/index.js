@@ -11,7 +11,6 @@ function dogPics(json){
       dogContainer = document.getElementById('dog-image-container');
       const dogImage = document.createElement('img');
       dogImage.src = dog;
-      console.log(dogContainer);
-      // dogContainer.append(dogImage);
+      dogContainer.append(dogImage);
     });
   } 
