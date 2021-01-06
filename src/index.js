@@ -35,5 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   
+  addEventListener('click', () => {
+    
+  })
+  
   
 });
