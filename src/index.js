@@ -15,4 +15,6 @@ function dogPics(json){
     });
   } 
   
-  document.addEventListener("DOMContentLoaded",)
+  document.addEventListener("DOMContentLoaded", () => {
+    
+  })
