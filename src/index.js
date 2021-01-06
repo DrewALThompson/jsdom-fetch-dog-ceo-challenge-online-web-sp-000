@@ -1,6 +1,7 @@
 console.log('%c HI', 'color: firebrick')
 
 dogContainer = document.getElementById('dog-image-container');
+
 dogImage = document.createElement('img')
 
 function toImg(){
