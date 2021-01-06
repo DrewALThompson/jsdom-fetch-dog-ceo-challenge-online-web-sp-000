@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
   .then(res => res.json())
   .then(json => dogPics(json));
   
-  
+  fetch(breedUrl)
+  .then(res => res.json())
+  .then(json => dogBreeds(json))
     
   function dogPics(json){
     json.message.forEach(dog => {
@@ -19,6 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
       dogContainer.append(dogImage);
     });
   } 
+  
+  function dogBreeds(json){
+    
+  }
   
   
 });
