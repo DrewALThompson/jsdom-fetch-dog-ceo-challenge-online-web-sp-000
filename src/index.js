@@ -5,11 +5,10 @@ dogContainer = document.getElementById('dog-image-container');
 
 
 
-function fetchDogs(){
+
   fetch(imgUrl)
   .then(res => res.json())
   .then(json => dogPics(json));
-}
 
 function dogPics(json){
   json.message.forEach(pic => {
