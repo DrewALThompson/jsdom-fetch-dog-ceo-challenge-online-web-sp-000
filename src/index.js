@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const breedUrl = 'https://dog.ceo/api/breeds/list/all';
   const dogContainer = document.getElementById('dog-image-container');
   const breedUl = document.getElementById('dog-breeds');
-  const dropDown = document.querySele
+  const dropDown = document.getElementById('breed-dropdown')
   
 
   fetch(imgUrl)
