@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   addEventListener('click', (e) => {
-    e.target.style.color =
+    e.target.style.color = 'red';
   })
   
   
