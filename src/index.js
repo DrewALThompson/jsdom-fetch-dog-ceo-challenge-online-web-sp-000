@@ -5,7 +5,5 @@ dogImage = document.createElement('img')
 function fetchDogs(){
   fetch("https://dog.ceo/api/breeds/image/random/4")
   .then(res => res.json())
-  .then(function(json){
-    console.log(json);
-  });
+  .then(json => console.log(json));
 }
