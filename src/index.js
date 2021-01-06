@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   .then(res => res.json())
   .then(result => {
     allBreeds = Object.keys(result.message);
-    console.log(allBreeds);
+    dogBreeds(allBreeds);
   })
     
   function dogPics(json){
@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   } 
   
-  function dogBreeds(result){
-    result.message.forEach(breed => {
+  function dogBreeds(allBreeds){
+    allBreeds.forEach(breed => {
       const breedLi = document.createElement('li');
       breedLi.innerHTML = breed;
       breedContainer.appendChild(breedLi);
