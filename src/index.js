@@ -12,9 +12,9 @@ function fetchDogs(){
 }
 
 function dogPics(json){
-  json['message'].forEach(pic => {
+  json.message.forEach(pic => {
     dogImage = document.createElement('img');
     dogImage.src = pic;
-    dogContainer.appendChild(dogImage)
-  })
+    dogContainer.appendChild(dogImage);
+  });
 }
