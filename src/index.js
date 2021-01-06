@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let letter = event.target.value;
     let filteredDogs = allBreeds.filter(breed => breed.startsWith(letter));
     while (child){
-      breedUl.removeChild
+      breedUl.removeChild(breedUl.lastC)
     }
     dogBreeds(filteredDogs);
   })
