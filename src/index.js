@@ -19,6 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
     allBreeds = Object.keys(result.message);
     dogBreeds(allBreeds);
   })
+  
+  breedUl.addEventListener('click', (e) => {
+    e.target.style.color = 'red';
+  })
+  
+  dropDown.addEventListener('change', (e) => {
+    let letter = event.target.value;
+    let filteredDogs = allBreeds.filter(breed => breed.startsWith(letter));
+    dogBreeds(filteredDogs);
+  })
     
   function dogPics(json){
     json.message.forEach(dog => {
@@ -36,14 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   
-  breedUl.addEventListener('click', (e) => {
-    e.target.style.color = 'red';
-  })
-  
-  dropDown.addEventListener('change', (e) => {
-    let letter = event.target.value;
-    let filterDogs = allBreeds.filter()
-  })
   
   
 });
