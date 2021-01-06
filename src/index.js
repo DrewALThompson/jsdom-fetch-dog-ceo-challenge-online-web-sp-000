@@ -4,7 +4,7 @@ dogContainer = document.getElementById('dog-image-container');
 dogImage = document.createElement('img')
 function fetchDogs(){
   fetch("https://dog.ceo/api/breeds/image/random/4")
-  .then(response => response.json())
+  .then(res => res.json())
   .then(function(json){
     console.log(json);
   });
