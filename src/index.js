@@ -5,10 +5,10 @@ dogContainer = document.getElementById('dog-image-container');
 
  fetch(imgUrl)
   .then(res => res.json())
-  .then(json => dogPics(json.message));
+  .then(json => dogPics(json));
 
-function dogPics(dogs){
-    dogs.forEach(dog => {
+function dogPics(json){
+    json.forEach(dog => {
       const dogImage = document.createElement('img');
       dogImage.src = dog;
       dogContainer.appendChild(dogImage)
