@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const allBreeds = [];
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
   const breedUrl = 'https://dog.ceo/api/breeds/list/all';
-  let dogContainer = document.getElementById('dog-image-container');
-  breedUl = document.getElementById('');
+  const dogContainer = document.getElementById('dog-image-container');
+  const breedUl = document.getElementById('dog-breeds');
   
 
   fetch(imgUrl)
